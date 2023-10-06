@@ -56,7 +56,7 @@
             <img src="assets/imgs/Laruan_2x2IDPicture.png" alt="">
             <h1>Jazhiel Laruan</h1>
             <h2 data-aos="zoom-in" data-aos-easing="ease"  data-aos-delay="50">Web Designer & Developer</h2>
-            <p data-aos="zoom-in" data-aos-easing="ease"  data-aos-delay="100">To know more about me please click on the below icons</p>
+            <p data-aos="zoom-in" data-aos-easing="ease"  data-aos-delay="100">To know more about me, click on the icons below</p>
             <div class="hover-effect">
                 <ul data-aos="zoom-in" data-aos-easing="ease"  data-aos-delay="100">
                     <li><a href="https://github.com/jajagel" target="_blank"><i class="bi bi-github"></i></a></li>
@@ -79,18 +79,18 @@
     <div class="services col-md-12 row" id="services">
         <div class="col-lg-2 col-md-4 text-center p-3" data-aos="fade-up" data-aos-easing="ease">
             <li class="fa fa-newspaper-o fa-2x text-center" aria-hidden="true"></li>
-            <h5 class="text-center">Web Site</h5>
-            <p class="text-center">Build best web applications from scratch on client need basis</p>
+            <h5 class="text-center">Web Design</h5>
+            <p class="text-center">Creating user-friendly websites</p>
           </div>
           <div class="col-lg-2 col-md-4 text-center p-3" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">
             <li class="fa fa-language fa-2x text-center" aria-hidden="true"></li>
-            <h5 class="text-center">Web Application</h5>
-            <p class="text-center">Build custom integrated web applications with Back-end server</p>
+            <h5 class="text-center">Web Development</h5>
+            <p class="text-center">Building functional websites</p>
           </div>
           <div class="col-lg-2 col-md-4 text-center p-3" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
             <li class="fa fa-object-group fa-2x text-center" aria-hidden="true"></li>
-            <h5 class="text-center">UX/UI Design</h5>
-            <p class="text-center">Provide solutions for better eye catching UI design for users interaction</p>
+            <h5 class="text-center">Graphic Design</h5>
+            <p class="text-center">Designing eye-catching visuals</p>
           </div>
           <div id="skills" class=""></div>
         </div>
@@ -99,7 +99,34 @@
     <div data-aos="fade" class="skills col-sm-12">
         <div class="software">
             <h2>Skills</h2>
-            <div class="bars" data-aos="fade-up" data-aos-easing="ease">
+            <div class="icons" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300"> 
+              <div class="icon">
+                <img src="./assets/imgs/akar-icons_php-fill.svg" alt="">
+              </div>
+              <div class="icon">
+                <img src="./assets/imgs/mdi_laravel.svg" alt="">
+              </div>
+              <div class="icon">
+                <img src="./assets/imgs/simple-icons_mysql.svg" alt="">
+              </div>
+              <div class="icon">
+                <img src="./assets/imgs/simple-icons_tailwindcss.svg" alt="">
+              </div>
+              <div class="icon">
+                <img src="./assets/imgs/akar-icons_css-fill.svg" alt="">
+              </div>
+              <div class="icon">
+                <img src="./assets/imgs/cib_js.svg" alt="">
+              </div>
+              <div class="icon">
+                <img src="./assets/imgs/akar-icons_html-fill.svg" alt="">
+              </div>
+              
+              <div class="icon">
+                <img src="./assets/imgs/Vector.svg" alt="">
+              </div>
+            </div>
+            <!-- <div class="bars" data-aos="fade-up" data-aos-easing="ease">
                 <p>HTML & CSS</p>
                 <div class="progress">
                     <div class="bar progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -128,7 +155,7 @@
                 <div class="progress">
                     <div class="bar progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div> 
-            </div>
+            </div> -->
         </div>
         <div id="contact"></div>
     </div>
@@ -147,22 +174,11 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
   AOS.init({
-	duration: 1000
+	duration: 1000,
+  once:true
 			});
 
-      var className = "inverted";
-      var scrollTrigger = 60;
-
-      window.onscroll = function() {
-        // We add pageYOffset for compatibility with IE.
-        if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-          document.getElementsByTagName("header")[0].classList.add(className);
-        } else {
-          document.getElementsByTagName("header")[0].classList.remove(className);
-        }
-      };
-
-
+   
 
   </script>
   </body>

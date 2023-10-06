@@ -11,7 +11,7 @@
   --gray: #5c6175;
   --lightcream: #fbfbfc;
   --purple: #7174dc;
-  --lightpurple: #9295f0;
+  --lightpurple: #a2a8ba;
 }
 
 html {
@@ -36,6 +36,16 @@ body {
 	justify-content: center;
 	align-items: center;
 }*/
+h1 {
+  font-weight: 900;
+  font-size: 56px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
 .about-me {
   display: flex;
   justify-content: center;
@@ -60,21 +70,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10vh;
+  padding: 7vh;
 }
 
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
+  padding: 7vh 2em;
   flex-direction: column;
   text-align: center;
-  height: 300px;
+  height: auto;
   width: auto;
-}
-.contact h1 {
-  font-size: 32px;
 }
 .contact h2 {
   font-size: 16px;
@@ -104,6 +111,7 @@ body {
 }*/
 header {
   position: fixed;
+  top: 0;
 }
 
 .hidden {
@@ -113,6 +121,7 @@ header {
 .header {
   width: 100%;
   height: 70px;
+  top: 0;
 }
 .header .navbar {
   display: flex;
@@ -138,7 +147,56 @@ header {
   margin-left: 1rem;
 }
 
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  padding-top: 20px;
+}
+
+.icon {
+  justify-self: center;
+  padding: 10px;
+}
+
+.icon:hover path {
+  fill: red;
+}
+
+.scroll {
+  margin-top: 12vh;
+}
+.scroll a {
+  text-decoration: none;
+  color: var(--deepblue) 10%;
+}
+.scroll:hover {
+  color: var(--lightpurple);
+}
+
 @media only screen and (max-width: 600px) {
+  .icons {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .scroll {
+    margin-top: 8vh;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2rem;
+  }
   nav ul li a {
     display: block;
   }
@@ -146,17 +204,21 @@ header {
     display: none;
   }
   .contact {
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+  }
+  .contact h2 {
+    font-size: 1rem;
   }
   header {
     position: fixed;
-  }
-  h1 {
-    font-size: 60px;
+    top: 0;
   }
   .about-me img {
     width: 150px;
     height: 150px;
+  }
+  .header {
+    top: 0;
   }
   .header .navbar {
     padding: 1rem 2rem;
@@ -175,13 +237,16 @@ header {
   }
   .header .navbar .wrapper .menu {
     padding-left: 2rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 25%;
     width: 100%;
-    transform: translateY(-50%);
+    transform: translateY(10%);
+    background-color: #fbfbfc;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .header .navbar .wrapper .menu-item {
     width: 100%;
@@ -214,7 +279,7 @@ header {
   .header .navbar .nav-toggle {
     display: block;
     position: fixed;
-    right: 1rem;
+    right: 2rem;
     top: 1rem;
     width: 2.5rem;
     height: 2.5rem;
@@ -280,32 +345,11 @@ header {
   z-index: 1;
   margin: 10px;
   text-align: center;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: 56px;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 26px;
-}
-
-.scroll {
-  margin-top: 12vh;
-}
-.scroll a {
-  text-decoration: none;
-  color: var(--deepblue) 10%;
-}
-.scroll:hover {
-  color: var(--lightpurple);
+  top: 0;
 }
 
 .skills {
-  padding: 5vh 0 7vh 0;
-  width: auto;
+  padding: 5vh 2em 7vh 2em;
 }
 
 li i {
@@ -408,14 +452,6 @@ li {
   margin: 0;
 }
 
-h1 {
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
 a {
   text-decoration: none;
 }
@@ -449,6 +485,7 @@ section.section_2 {
 header,
 main {
   width: 100vw;
+  top: 0;
 }
 
 header {
@@ -463,7 +500,7 @@ header {
 header nav {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: fixed;
   padding: 30px;
 }
 header nav li {

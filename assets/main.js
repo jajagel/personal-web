@@ -1,6 +1,3 @@
-$(document).ready(function(){
-    $(this).scrollTop(0);
-});
 
 var className = "inverted";
 var scrollTrigger = 60;
